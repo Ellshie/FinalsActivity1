@@ -1,4 +1,216 @@
 
+<h3 class="nav">Angular Material Components Demo</h3>
+<mat-tab-group>
+  <!-- Input tab -->
+  <mat-tab label="Input"> <form class="form1">
+    <mat-form-field class="example-full-width">
+      <mat-label>Your Name</mat-label>
+      <input matInput placeholder="Ex. Juan Dela Cruz" value="Erniella Manalansan">
+    </mat-form-field>
+     <br>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Section</mat-label>
+      <input matInput placeholder="Ex. WD-301" value="WD-302">
+    </mat-form-field> 
+    <br>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Subject</mat-label>
+      <input matInput placeholder="Ex. ADWEB" value="ADWEB">
+    </mat-form-field>
+
+  </form> </mat-tab>
+
+  <!-- Date-Picker Tab -->
+  <mat-tab label="Date-Picker"> 
+    <mat-form-field class="tab2">
+    <mat-label>Birthday</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field> </mat-tab>
+
+  <!-- Grid List Tab -->
+  <mat-tab label="Grid-List">
+    <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile><img src="https://wallpapercave.com/wp/wp8531590.jpg"></mat-grid-tile>
+    <mat-grid-tile><img src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjEwOTAtaGR3YWxscGFwZXItMDIta3d6cDMxOXMuanBn.jpg"></mat-grid-tile>
+    <mat-grid-tile><img src="https://corriebromfield.com/wp-content/uploads/2018/09/Cornsilk-Forest-Fall-Desktop-Wallpaper-7-1440x810.jpg"></mat-grid-tile>
+    <mat-grid-tile><img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA2L3JtMzQ2LWFkai1ibG9nYmFubmVyLTAzLXguanBn.jpg"></mat-grid-tile>
+  </mat-grid-list> </mat-tab>
+
+<!-- Radio Button Tab -->
+  <mat-tab label="Buttons"><section>
+    <div class="example-label">Basic</div>
+    <div class="example-button-row">
+      <button mat-button>Basic</button>
+      <button mat-button color="primary">Primary</button>
+      <button mat-button color="accent">Accent</button>
+      <button mat-button color="warn">Warn</button>
+      <button mat-button disabled>Disabled</button>
+      <a mat-button href="https://www.google.com/" target="_blank">Link</a>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+  <section>
+    <div class="example-label">Raised</div>
+    <div class="example-button-row">
+      <button mat-raised-button>Basic</button>
+      <button mat-raised-button color="primary">Primary</button>
+      <button mat-raised-button color="accent">Accent</button>
+      <button mat-raised-button color="warn">Warn</button>
+      <button mat-raised-button disabled>Disabled</button>
+      <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+  <section>
+    <div class="example-label">Stroked</div>
+    <div class="example-button-row">
+      <button mat-stroked-button>Basic</button>
+      <button mat-stroked-button color="primary">Primary</button>
+      <button mat-stroked-button color="accent">Accent</button>
+      <button mat-stroked-button color="warn">Warn</button>
+      <button mat-stroked-button disabled>Disabled</button>
+      <a mat-stroked-button href="https://www.google.com/" target="_blank">Link</a>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+  <section>
+    <div class="example-label">Flat</div>
+    <div class="example-button-row">
+      <button mat-flat-button>Basic</button>
+      <button mat-flat-button color="primary">Primary</button>
+      <button mat-flat-button color="accent">Accent</button>
+      <button mat-flat-button color="warn">Warn</button>
+      <button mat-flat-button disabled>Disabled</button>
+      <a mat-flat-button href="https://www.google.com/" target="_blank">Link</a>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+  <section>
+    <div class="example-label">Icon</div>
+    <div class="example-button-row">
+      <div class="example-flex-container">
+        <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+          <mat-icon>home</mat-icon>
+        </button>
+        <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button disabled aria-label="Example icon button with a open in new tab icon">
+          <mat-icon>open_in_new</mat-icon>
+        </button>
+      </div>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+  <section>
+    <div class="example-label">FAB</div>
+    <div class="example-button-row">
+      <div class="example-flex-container">
+        <div class="example-button-container">
+          <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+        <div class="example-button-container">
+          <button mat-fab color="accent" aria-label="Example icon button with a bookmark icon">
+            <mat-icon>bookmark</mat-icon>
+          </button>
+        </div>
+        <div class="example-button-container">
+          <button mat-fab color="warn" aria-label="Example icon button with a home icon">
+            <mat-icon>home</mat-icon>
+          </button>
+        </div>
+        <div class="example-button-container">
+          <button mat-fab disabled aria-label="Example icon button with a heart icon">
+            <mat-icon>favorite</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+  <section>
+    <div class="example-label">Mini FAB</div>
+    <div class="example-button-row">
+      <div class="example-flex-container">
+        <div class="example-button-container">
+          <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </div>
+        <div class="example-button-container">
+          <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
+            <mat-icon>plus_one</mat-icon>
+          </button>
+        </div>
+        <div class="example-button-container">
+          <button mat-mini-fab color="warn" aria-label="Example icon button with a filter list icon">
+            <mat-icon>filter_list</mat-icon>
+          </button>
+        </div>
+        <div class="example-button-container">
+          <button mat-mini-fab disabled aria-label="Example icon button with a home icon">
+            <mat-icon>home</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section></mat-tab>
+  <!-- Stepper Tab -->
+  <mat-tab label="Stepper"> <button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
+    {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
+  </button>
+  <mat-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>Fill out your name</ng-template>
+        <mat-form-field>
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup" label="Fill out your address">
+      <form [formGroup]="secondFormGroup">
+        <mat-form-field>
+          <mat-label>Address</mat-label>
+          <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
+                 required>
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Done</ng-template>
+      <p>You are now done.</p>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button (click)="stepper.reset()">Reset</button>
+      </div>
+    </mat-step>
+  </mat-stepper>
+   </mat-tab>
+</mat-tab-group>
+<!-- books -->
+<hr>
 <nav class="bg-white border-gray-200 dark:bg-gray-900">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="#" class="text-blue-500 hover:text-blue-800">
@@ -24,6 +236,7 @@
     </div>
   </div>
 </nav>
+
 
 
 <router-outlet></router-outlet>
